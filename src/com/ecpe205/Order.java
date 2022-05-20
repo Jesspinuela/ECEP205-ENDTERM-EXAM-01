@@ -1,24 +1,27 @@
 package com.ecpe205;
 
-import java.util.ArrayList;
-
 public class Order {
-    private ArrayList<Item> items;
+    private Item[] items;
 
+    /**
+     * Allocated an Order to exactly 5 Items.
+     * Note: All 5 location by default are null
+     */
     public Order() {
-        this.items = new ArrayList<Item>();
+        this.items = new Item[5];
     }
 
-    public ArrayList<Item> getItems() {
+    public Item[] getItems() {
         return items;
     }
 
     /**
-     * Create a new item and append to the items list
+     * Set the item on the given index
      * @param product
      * @param quantity
+     * @param index
      */
-    public void addItem(Product product, double quantity) {
+    public void setItem(Product product, double quantity, int index) {
         //edit starts here
 
         //edit ends here
@@ -26,11 +29,12 @@ public class Order {
 
 
     /**
-     * Remove an item from a given index.
+     * Sets the given index to null
      * @param index
      */
     public void removeItem(int index){
         //edit starts here
+
 
         //edit ends here
     }
